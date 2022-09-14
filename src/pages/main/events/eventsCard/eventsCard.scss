@@ -1,0 +1,147 @@
+@import "../../../../globalStyles";
+
+
+
+.Events_card {
+    width: 100%;
+    padding: 15px*$vw;
+    background: #F1F1F1;
+    border-radius: 10px*$vw;
+
+    @include flex(flex, row, nowrap, flex-start, flex-start, unset);
+}
+.Events_card_date {
+    width: 100px*$vw;
+    height: 100px*$vw;
+    background: #0AABC1;
+    border-radius: 2px*$vw;
+    margin-right: 12px*$vw;
+
+    @include flex(flex, column, nowrap, center, center, unset);
+
+    .num {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px*$vw;
+        line-height: 34px*$vw;
+        color: #FFFFFF;
+    }
+    .month {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px*$vw;
+        line-height: 24px*$vw;
+        color: #FFFFFF;
+    }
+}
+.Events_card_content {
+    width: 530px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+    .time {
+        width: fit-content;
+        margin-bottom: 7px*$vw;
+
+        @include flex(flex, row, nowrap, flex-start, center, unset);
+
+        .icon {
+            width: 21px*$vw;
+            height: 21px*$vw;
+            margin-right: 6px*$vw;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px*$vw;
+            line-height: 20px*$vw;
+            color: #0AABC1;
+        }
+    }
+    h5 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px*$vw;
+        line-height: 24px*$vw;
+        color: #323232;
+        margin-bottom: 7px*$vw;
+    }
+    &>.text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px*$vw;
+        line-height: 20px*$vw;
+        color: #797979;
+    }
+}
+
+
+
+
+.Events_card_big {
+    width: 611px*$vw;
+    padding: 0;
+    padding-bottom: 38px*$vw;
+    background: #F1F1F1;
+    border-radius: 10px*$vw;
+    position: relative;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+
+    .Events_card_date {
+        position: absolute;
+        top: 20px*$vw;
+        right: 20px*$vw;
+        margin: 0;
+        width: unset;
+        height: unset;
+        padding: 15px*$vw 20px*$vw;
+        flex-direction: row;
+        border-radius: 10px*$vw;
+
+        span {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px*$vw;
+            line-height: 22px*$vw;
+            text-transform: uppercase;
+            color: #FFFBF0;
+        }
+
+        .num {
+            margin-right: 5px*$vw;
+        }
+    }
+    .Events_card_content {
+        width: 100%;
+        padding: 0 23px*$vw;
+        margin-bottom: 50px*$vw;
+    }
+}
+.Events_card_img {
+    width: 611px*$vw;
+    height: 360px*$vw;
+    margin-bottom: 22px*$vw;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.Events_card_btn {
+    align-self: flex-start;
+    margin-left: 23px*$vw;
+}

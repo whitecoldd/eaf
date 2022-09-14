@@ -1,0 +1,43 @@
+@import "../../../globalStyles";
+
+
+.dropBtn {
+    border: none;
+    background-color: transparent;
+}
+.css-fi1bin {
+    z-index: 10 !important;
+}
+.MuiPaper-elevation,
+.MuiMenu-list {
+    width: fit-content;
+    background-color: transparent !important;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .dropBtn {
+        border: none;
+        background-color: transparent;
+    }
+    .css-fi1bin {
+        z-index: 10 !important;
+    }
+    .MuiPaper-elevation,
+    .MuiMenu-list {
+        width: 100%;
+        background-color: transparent !important;
+    }
+    .MuiPaper-elevation {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+        width: 100%;
+    }
+}

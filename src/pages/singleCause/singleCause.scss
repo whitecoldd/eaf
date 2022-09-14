@@ -1,0 +1,185 @@
+@import "../../globalStyles";
+
+
+
+.SingleCause_w {
+    width: 100%;
+    padding: 0 300px*$vw;
+    margin-top: 50px*$vw;
+
+    @include flex(flex, row, nowrap, space-between, flex-start, unset);
+}
+
+.SingleCause_content_w {
+    width: 940px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+    h1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px*$vw;
+        line-height: 44px*$vw;
+        color: #323232;
+        margin-bottom: 15px*$vw;
+    }
+
+    .slider {
+        width: 100%;
+        height: 32px*$vw;
+        margin-bottom: 50px*$vw;
+
+        @include flex(flex, row, nowrap, center, center, unset);
+
+        .range {
+            width: 100%;
+            height: 2px*$vw;
+            background-color: #9B9B9B;
+            border-radius: 2px*$vw;
+
+            @include flex(flex, row, nowrap, flex-start, center, unset);
+
+            .raised {
+                min-width: 16px*$vw;
+                max-width: 940px*$vw;
+                height: 100%;
+                background-color: #0AABC1;
+            }
+            .thumb {
+                width: 0;
+                position: relative;
+
+                span {
+                    width: 32px*$vw;
+                    height: 32px*$vw;
+                    background-color: #0AABC1;
+                    border-radius: 50%;
+                    padding: 9px*$vw 3px*$vw;
+
+                    position: absolute;
+                    top: -16px*$vw;
+                    left: -16px*$vw;
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px*$vw;
+                    line-height: 15px*$vw;
+                    color: #FFFFFF;
+
+                    @include flex(flex, row, nowrap, center, center, unset);
+                }
+            }
+        }
+    }
+}
+.SingleCause_content_img {
+    width: 100%;
+    height: 543px*$vw;
+    border-top-left-radius: 10px*$vw;
+    border-top-right-radius: 10px*$vw;
+    overflow: hidden;
+    margin-bottom: -15px*$vw;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.SingleCause_content_details {
+    width: 100%;
+    padding-bottom: 50px*$vw;
+    margin-bottom: 50px*$vw;
+    border-bottom: 0.5px*$vw solid #9D9B9B;
+
+    @include flex(flex, row, nowrap, space-between, center, unset);
+    
+    .left {
+        width: 440px*$vw;
+
+        @include flex(flex, row, wrap, space-between, center, unset);
+
+        .item {
+            width: 220px*$vw;
+            margin-bottom: 10px*$vw;
+
+            @include flex(flex, row, nowrap, flex-start, center, unset);
+
+            &:last-child,
+            &:nth-last-child(2) {
+                margin: 0;
+            }
+
+            .left {
+                width: fit-content;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px*$vw;
+                line-height: 130.4%;
+                color: #888888;
+                margin-right: 5px*$vw;
+            }
+            .right {
+                width: fit-content;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px*$vw;
+                line-height: 130.4%;
+                color: #0AABC1;
+            }
+        }
+    }
+}
+.SingleCause_content {
+    width: 100%;
+
+    @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+    h3 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px*$vw;
+        line-height: 29px*$vw;
+        color: #323232;
+        margin-bottom: 15px*$vw;
+    }
+    .text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px*$vw;
+        line-height: 29px*$vw;
+        color: #000000;
+        margin-bottom: 50px*$vw;
+    }
+    .imgs {
+        width: 100%;
+
+        @include flex(flex, row, nowrap, flex-start, flex-start, unset);
+
+        gap: 40px*$vw;
+        margin-bottom: 50px*$vw;
+
+        img {
+            width: 450px*$vw;
+            height: 300px*$vw;
+            object-fit: cover;
+            border-radius: 10px*$vw;
+        }
+    }
+}
+.SingleCause_content_accordeon {
+    width: 100%;
+    margin-bottom: 20px*$vw;
+
+    .MuiPaper-root {
+        &::before {
+            height: 0 !important;
+        }
+    }
+}
